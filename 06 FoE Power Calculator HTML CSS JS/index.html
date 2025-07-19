@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Font Awesome CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <div class="input-group">
+        <!-- Building Name -->
+        <div class="building-name-group">
+          <label for="building-name">Nome do prédio:</label>
+          <input
+            type="text"
+            placeholder="Ex: Travessia dos Animais"
+            id="building-name"
+          />
+          <label for="space">Espaço ocupado:</label>
+          <input type="number" id="space-axis-X" placeholder="Ex: em 4x5, é o 4">
+          <input type="number" id="space-axis-Y" placeholder="Ex: em 4x5, é o 5">
+        </div>
+
+        <!-- Basic Power -->
+        <div class="power-group">
+          <h3>Poder Básico</h3>
+          <div class="power-row">
+            <div class="input-pair">
+              <label for="red-base-attack">Ataque Básico Vermelho:</label>
+              <input type="number" placeholder="0" id="red-base-attack" />
+            </div>
+            <div class="input-pair">
+              <label for="red-base-defense">Defesa Básica Vermelha:</label>
+              <input type="number" placeholder="0" id="red-base-defense" />
+            </div>
+          </div>
+          <div class="power-row">
+            <div class="input-pair">
+              <label for="blue-base-attack">Ataque Básico Azul:</label>
+              <input type="number" placeholder="0" id="blue-base-attack" />
+            </div>
+            <div class="input-pair">
+              <label for="blue-base-def">Defesa Básica Azul:</label>
+              <input type="number" placeholder="0" id="blue-base-def" />
+            </div>
+          </div>
+        </div>
+
+        <!-- EXP Power -->
+        <div class="power-group">
+          <h3>Poder de Expedição</h3>
+          <div class="power-row">
+            <div class="input-pair">
+              <label for="red-attack-exp">Ataque Vermelho EXP:</label>
+              <input type="number" placeholder="0" id="red-attack-exp" />
+            </div>
+            <div class="input-pair">
+              <label for="red-defense-exp">Defesa Vermelha EXP:</label>
+              <input type="number" placeholder="0" id="red-defense-exp" />
+            </div>
+          </div>
+          <div class="power-row">
+            <div class="input-pair">
+              <label for="blue-attack-exp">Ataque Azul EXP:</label>
+              <input type="number" placeholder="0" id="blue-attack-exp" />
+            </div>
+            <div class="input-pair">
+              <label for="blue-defense-exp">Defesa Azul EXP:</label>
+              <input type="number" placeholder="0" id="blue-defense-exp" />
+            </div>
+          </div>
+        </div>
+
+        <!-- CBG Power -->
+        <div class="power-group">
+          <h3>Poder do CB</h3>
+          <div class="power-row">
+            <div class="input-pair">
+              <label for="red-attack-cbg">Ataque Vermelho CBG:</label>
+              <input type="number" placeholder="0" id="red-attack-cbg" />
+            </div>
+            <div class="input-pair">
+              <label for="red-defense-cbg">Defesa Vermelha CBG:</label>
+              <input type="number" placeholder="0" id="red-defense-cbg" />
+            </div>
+          </div>
+          <div class="power-row">
+            <div class="input-pair">
+              <label for="blue-attack-cbg">Ataque Azul CBG:</label>
+              <input type="number" placeholder="0" id="blue-attack-cbg" />
+            </div>
+            <div class="input-pair">
+              <label for="blue-defense-cbg">Defesa Azul CBG:</label>
+              <input type="number" placeholder="0" id="blue-defense-cbg" />
+            </div>
+          </div>
+        </div>
+
+        <!-- IQ Power -->
+        <div class="power-group">
+          <h3>Poder da IQ</h3>
+          <div class="power-row">
+            <div class="input-pair">
+              <label for="red-attack-iq">Ataque Vermelho IQ:</label>
+              <input type="number" placeholder="0" id="red-attack-iq" />
+            </div>
+            <div class="input-pair">
+              <label for="red-defense-iq">Defesa Vermelha IQ:</label>
+              <input type="number" placeholder="0" id="red-defense-iq" />
+            </div>
+          </div>
+          <div class="power-row">
+            <div class="input-pair">
+              <label for="blue-attack-iq">Ataque Azul IQ:</label>
+              <input type="number" placeholder="0" id="blue-attack-iq" />
+            </div>
+            <div class="input-pair">
+              <label for="blue-defense-iq">Defesa Azul IQ:</label>
+              <input type="number" placeholder="0" id="blue-defense-iq" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="calculate-btn">Calcular</button>
+    </main>
+  </body>
+</html>
